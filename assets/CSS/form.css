@@ -1,0 +1,135 @@
+body{
+    background-color: #1A1A1A;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 80px;
+}
+
+.logo img{
+    margin-left: 2.5rem;
+    width: 80px;
+}
+header nav .logoTitle{
+    font-size: 30px;
+    color: hsl(81, 66%, 50%);
+    margin-left: 7rem;
+}
+
+main{
+    color: hsl(60, 50%, 99%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main form input{
+    width: 500px;
+    padding: 0.7rem 1rem;
+    border-radius: 20px;
+    border: 1px solid black;
+    opacity: 0.6;
+    transition: all 200ms ease;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+main form button{
+    cursor: pointer;
+    width: 200px;
+    border: 1px solid black;
+    background-color: hsl(81, 66%, 62%);
+    padding: 0.7rem 1rem;
+    border-radius: 20px;
+    opacity: 0.6;
+    margin-left: 1.1rem;
+    transition: all 200ms ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, hsl(81, 66%, 62%) 0px 3px 7px -3px;
+}
+
+main form button:hover{
+    transform: scale(1.1);
+    font-size: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, hsl(81, 66%, 62%) 0px 5px 8px -2px;
+}
+
+main #resultDiv.active{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    width: 50%;
+    background-color: black;
+    border-radius: 20px;
+    margin-bottom: 4rem;
+    padding: 3rem;
+}
+
+main .imgDiv{
+    margin-right: 4rem;
+}
+
+main .content.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+main .content h2{
+    color: hsl(81, 66%, 62%);
+    font-size: 35px;
+    margin-bottom: 1.3rem;
+}
+
+main .content p{
+    margin-bottom: 1.3rem;
+    line-height: 25px;
+    width:90%;
+}
+main .imgResult {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.imgDiv{
+    text-align: center;
+}
+
+@media (max-width:1200px) {
+    main .imgDiv img{
+        width: 280px;
+    }
+
+    header{
+        align-items: start;
+        justify-content: start;
+    }
+
+    header nav .logoTitle{
+        font-size: 28px;
+    }
+
+    main #resultDiv.active{
+        width: 80%;
+        flex-direction: column;
+    }
+
+    main .content img{
+        width: 100px;
+    }
+}
+@media (max-width:722px){
+    main form button{
+        width: 150px;
+    }
+    main form input{
+        width: 330px;
+    }
+}
