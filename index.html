@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API movie</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <title>API filmes</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="logoTitle">
+                <h1>Cinema Search</h1>
+            </div>
+            <div class="logo">
+                <img src="assets/IMG/46950525-icone-filme-procurar-relacionado-para-cinema-simbolo-lustroso-estilo-simples-projeto-ilustracao-gratis-vetor.jpg" alt="">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form  id="form">
+            <input type="search" id="input" placeholder="SEARCH FOR A MOVIE">
+            <button class="btn">Search</button>
+        </form>
+        <div id="resultDiv">
+            <div class="imgDiv">
+                <img src="" alt="" class="imgResult" id="imgResult">
+            </div>
+            <div class="content">
+                <h2 id="Title"></h2>
+                <p id="plot"></p>
+                <p id="Genre"></p>
+                <p id="Year"></p>
+                <p id="Runtime"></p>
+                <p id="Director"></p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
