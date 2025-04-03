@@ -132,4 +132,18 @@ main .imgResult {
     main form input{
         width: 330px;
     }
+    main #resultDiv img {
+        width: 240px;
+    }
+}
+@media (max-width:517px){
+    main form button{
+        width: 120px;
+    }
+    main form input{
+        width: 290px;
+    }
+    main #resultDiv img {
+        width: 220px;
+    }
 }
